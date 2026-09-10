@@ -1,0 +1,24 @@
+# 가상환경 제외
+.venv
+*md
+
+# 원본데이터
+/previous_competition/2/info
+/previous_competition/2/code/initial_data
+
+
+/previous_competition/3/info
+/previous_competition/3/code/initial_data
+
+
+/previous_competition/4/code/initial_data
+/previous_competition/4/info
+/previous_competition/4/report
+/previous_competition/4/outputs
+
+
+/previous_competition/5/code/initial_data
+/previous_competition/5/info
+
+
+
