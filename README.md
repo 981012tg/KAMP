@@ -13,19 +13,19 @@
 
 ## 코드 구성
 
-`01`부터 `04`까지는 분석 과정을 단계별로 나눈 코드입니다. [`00_KAMP_full_pipeline.ipynb`](./00_KAMP_full_pipeline.ipynb)는 이 과정을 하나의 실행 흐름으로 통합한 최종 제출용 파이프라인으로, 별도의 Python 모듈을 불러오지 않고 전처리부터 결과 저장까지 순서대로 실행합니다.
+`01`부터 `04`까지는 분석 과정을 단계별로 나눈 코드입니다. [`00_KAMP_full_pipeline.ipynb`](./final_code/00_KAMP_full_pipeline.ipynb)는 이 과정을 하나의 실행 흐름으로 통합한 최종 제출용 파이프라인으로, 별도의 Python 모듈을 불러오지 않고 전처리부터 결과 저장까지 순서대로 실행합니다.
 
 | 구분 | 파일 | 내용 |
 | --- | --- | --- |
-| 통합 실행 | [`00_KAMP_full_pipeline.ipynb`](./00_KAMP_full_pipeline.ipynb) | EDA, 전처리, 모델 학습·평가, 오류 분석, 자원 최적화를 한 번에 수행 |
-| 01 데이터 분석 | [`01_EDA.ipynb`](./01_EDA.ipynb) | 데이터 품질, 시간 순서, 반복 패턴, 생산량·전력 관계 및 피크 후보 탐색 |
-| 01 전처리 | [`01_preprocessing.ipynb`](./01_preprocessing.ipynb) | 시간 오류 복구, 24시간 예측창 생성, 시간순 데이터 분할 및 누출 검사 |
-| 02 모델링 | [`02_main_pipeline.ipynb`](./02_main_pipeline.ipynb) | 상태 전환 피처, LightGBM 수치 예측, 피크 경보 및 결과 저장 |
-| 02 GRU | [`02_modeling_gru.ipynb`](./02_modeling_gru.ipynb), [`02_aligned_gru.py`](./02_aligned_gru.py) | GRU 학습과 LightGBM 동일 조건 비교 |
-| 02 앙상블 | [`02_model_selection_ensemble.ipynb`](./02_model_selection_ensemble.ipynb) | LightGBM과 GRU의 비중별 피크 탐지 성능 비교 |
-| 02 재현 | [`02_team_model.ipynb`](./02_team_model.ipynb) | 팀 모델 실행과 제출용 출력 분리 |
-| 03 오류 분석 | [`03_error_peak_condition_analysis.ipynb`](./03_error_peak_condition_analysis.ipynb) | 조건별 수치 오차, 오경보, 미탐지 및 대표 실패 사례 분석 |
-| 04 현장 활용 | [`04_resource_cost_optimization.ipynb`](./04_resource_cost_optimization.ipynb), [`04_resource_cost_optimization.py`](./04_resource_cost_optimization.py) | 생산일정 재배치와 전력·인건비 모의실험 |
+| 통합 실행 | [`00_KAMP_full_pipeline.ipynb`](./final_code/00_KAMP_full_pipeline.ipynb) | EDA, 전처리, 모델 학습·평가, 오류 분석, 자원 최적화를 한 번에 수행 |
+| 01 데이터 분석 | [`01_EDA.ipynb`](./final_code/01_EDA.ipynb) | 데이터 품질, 시간 순서, 반복 패턴, 생산량·전력 관계 및 피크 후보 탐색 |
+| 01 전처리 | [`01_preprocessing.ipynb`](./final_code/01_preprocessing.ipynb) | 시간 오류 복구, 24시간 예측창 생성, 시간순 데이터 분할 및 누출 검사 |
+| 02 모델링 | [`02_main_pipeline.ipynb`](./final_code/02_main_pipeline.ipynb) | 상태 전환 피처, LightGBM 수치 예측, 피크 경보 및 결과 저장 |
+| 02 GRU | [`02_modeling_gru.ipynb`](./final_code/02_modeling_gru.ipynb), [`02_aligned_gru.py`](./final_code/02_aligned_gru.py) | GRU 학습과 LightGBM 동일 조건 비교 |
+| 02 앙상블 | [`02_model_selection_ensemble.ipynb`](./final_code/02_model_selection_ensemble.ipynb) | LightGBM과 GRU의 비중별 피크 탐지 성능 비교 |
+| 02 재현 | [`02_team_model.ipynb`](./final_code/02_team_model.ipynb) | 팀 모델 실행과 제출용 출력 분리 |
+| 03 오류 분석 | [`03_error_peak_condition_analysis.ipynb`](./final_code/03_error_peak_condition_analysis.ipynb) | 조건별 수치 오차, 오경보, 미탐지 및 대표 실패 사례 분석 |
+| 04 현장 활용 | [`04_resource_cost_optimization.ipynb`](./final_code/04_resource_cost_optimization.ipynb), [`04_resource_cost_optimization.py`](./final_code/04_resource_cost_optimization.py) | 생산일정 재배치와 전력·인건비 모의실험 |
 
 ## 데이터
 
